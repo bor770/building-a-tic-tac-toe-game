@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles/config.css" />
+    <link rel="stylesheet" href="styles/dialog.css" />
+    <link rel="stylesheet" href="styles/game.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/won.css" />
+    <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/elements.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Play Tic, Tac, Toe</h1>
+      <h2 class="header__h2">
+        Built with HTML, CSS, Javascript and - of course - lots of love!
+      </h2>
+    </header>
+    <main class="main">
+      <section class="config">
+        <ol class="config__ol">
+          <li class="config__li">
+            <h3 class="config__h3">Player 1</h3>
+            <h4 class="config__h4">PLAYER NAME</h4>
+            <p class="config__p">X</p>
+            <button
+              class="config__edit-button button button-type1"
+              id="editPlayer1Button"
+              data-player="1"
+            >
+              Edit
+            </button>
+          </li>
+          <li class="config__li">
+            <h3 class="config__h3">Player 2</h3>
+            <h4 class="config__h4">PLAYER NAME</h4>
+            <p class="config__p">O</p>
+            <button
+              class="config__edit-button button button-type1"
+              id="editPlayer2Button"
+              data-player="2"
+            >
+              Edit
+            </button>
+          </li>
+        </ol>
+        <button
+          class="config__start-button button button-type2"
+          id="startButton"
+        >
+          Start New Game
+        </button>
+      </section>
+      <section class="won hidden">
+        <h3 class="won__h3">You won, <span class="won__span"></span>!</h3>
+        <p class="won__p">Click "Start New Game" above, to start a new game!</p>
+      </section>
+      <section class="game hidden">
+        <h3 class="game__h3">
+          It's your turn <span class="game__span">M</span>!
+        </h3>
+        <ol class="game__ol">
+          <li class="game__li"></li>
+          <li class="game__li"></li>
+          <li class="game__li"></li>
+          <li class="game__li"></li>
+          <li class="game__li"></li>
+          <li class="game__li"></li>
+          <li class="game__li"></li>
+          <li class="game__li"></li>
+          <li class="game__li"></li>
+        </ol>
+      </section>
+      <aside class="dialog hidden" id="playerNameDialog">
+        <form class="dialog__form" id="form">
+          <h3 class="dialog__h3">Choose your name</h3>
+          <p class="dialog__p">Player name</p>
+          <label class="dialog__label" for="name"></label
+          ><input required class="dialog__input" type="text" id="name" />
+          <ul class="dialog__ul">
+            <li class="dialog__li">
+              <button
+                class="dialog__button dialog__button_cancel button button-type1"
+                id="cancelButton"
+                type="button"
+              >
+                Cancel
+              </button>
+            </li>
+            <li class="dialog__li">
+              <button
+                class="dialog__button dialog__button_confirm button button-type2"
+                id="confirmButton"
+                type="submit"
+              >
+                Confirm
+              </button>
+            </li>
+          </ul>
+        </form>
+      </aside>
+    </main>
+  </body>
+</html>

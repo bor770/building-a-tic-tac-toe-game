@@ -1,0 +1,45 @@
+.config {
+  margin: 0 auto 50px;
+  width: 610px;
+}
+
+.config__ol {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.config__li {
+  align-items: center;
+  background-color: var(--color-purple-800);
+  border-radius: 5px;
+  box-shadow: 0 5px 5px var(--color-shadow);
+  display: flex;
+  flex-direction: column;
+  height: 205px;
+  justify-content: space-evenly;
+  width: 290px;
+}
+
+.config__h4 {
+  color: var(--color-purple-400);
+  font-size: 1.5rem;
+}
+
+.config__p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.config__edit-button {
+  height: 2.5rem;
+  width: 5rem;
+}
+
+.config__start-button {
+  display: block;
+  height: 2.5rem;
+  margin-inline: auto;
+  width: 11rem;
+}

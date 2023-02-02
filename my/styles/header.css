@@ -1,0 +1,14 @@
+.header {
+  align-items: center;
+  background-color: var(--color-purple-500);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: var(--header-height);
+  justify-content: space-evenly;
+}
+
+.header__h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}

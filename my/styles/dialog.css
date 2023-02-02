@@ -1,0 +1,43 @@
+.dialog {
+  background-color: var(--color-backdrop);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.dialog__form {
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 205px;
+  justify-content: space-evenly;
+  margin: var(--header-height) auto 0;
+  width: 675px;
+}
+
+.dialog__h3 {
+  font-size: 1.5rem;
+}
+
+.dialog__p {
+  font-weight: bold;
+}
+
+.dialog__input {
+  border: 1px solid var(--color-gray-600);
+  height: 2.187rem;
+  width: 15.937rem;
+}
+
+.dialog__ul {
+  display: flex;
+  list-style: none;
+}
+
+.dialog__button {
+  height: 2.5rem;
+  width: 6.25rem;
+}

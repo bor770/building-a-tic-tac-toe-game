@@ -1,0 +1,43 @@
+.game {
+  text-align: center;
+}
+
+.game__h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.game__span {
+  font-weight: bold;
+}
+
+.game__ol {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, var(--cell-width));
+  list-style: none;
+  margin-inline: auto;
+  width: fit-content;
+}
+
+.game__li {
+  align-items: center;
+  aspect-ratio: 1;
+  background-color: var(--color-purple-600);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.game__li:hover {
+  background-color: var(--color-purple-450);
+}
+
+.selected {
+  background-color: var(--color-purple-450);
+  cursor: auto;
+}
