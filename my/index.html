@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/config.css" />
     <link rel="stylesheet" href="styles/dialog.css" />
     <link rel="stylesheet" href="styles/game.css" />
@@ -81,9 +87,9 @@
       <aside class="dialog hidden" id="playerNameDialog">
         <form class="dialog__form" id="form">
           <h3 class="dialog__h3">Choose your name</h3>
-          <p class="dialog__p">Player name</p>
-          <label class="dialog__label" for="name"></label
+          <label class="dialog__label" for="name">Player name</label
           ><input required class="dialog__input" type="text" id="name" />
+          <p class="dialog__p hidden">Please enter a valid name!</p>
           <ul class="dialog__ul">
             <li class="dialog__li">
               <button

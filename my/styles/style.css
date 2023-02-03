@@ -33,6 +33,6 @@ html {
 
 body {
   color: var(--color-gray-500);
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   height: 100vh;
 }
