@@ -7,8 +7,12 @@
 html {
   --cell-width: 100px;
 
+  --color-brown-500: #880202;
+
   --color-gray-500: #2c292c;
   --color-gray-600: #ccc;
+
+  --color-pink-500: #fddbdb;
 
   --color-purple-200: #320557;
   --color-purple-300: #4f0abe;
