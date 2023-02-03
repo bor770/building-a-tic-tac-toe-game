@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="styles/shared.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="scripts/elements.js" defer></script>
-    <script src="scripts/script.js" defer></script>
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/game.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -34,7 +35,7 @@
         <ol class="config__ol">
           <li class="config__li">
             <h3 class="config__h3">Player 1</h3>
-            <h4 class="config__h4">PLAYER NAME</h4>
+            <h4 class="config__player-name">PLAYER NAME</h4>
             <p class="config__p">X</p>
             <button
               class="config__edit-button button button-type1"
@@ -46,7 +47,7 @@
           </li>
           <li class="config__li">
             <h3 class="config__h3">Player 2</h3>
-            <h4 class="config__h4">PLAYER NAME</h4>
+            <h4 class="config__player-name">PLAYER NAME</h4>
             <p class="config__p">O</p>
             <button
               class="config__edit-button button button-type1"
@@ -89,7 +90,9 @@
           <h3 class="dialog__h3">Choose your name</h3>
           <label class="dialog__label" for="name">Player name</label
           ><input required class="dialog__input" type="text" id="name" />
-          <p class="dialog__p hidden">Please enter a valid name!</p>
+          <p class="dialog__p hidden" id="invalidP">
+            Please enter a valid name!
+          </p>
           <ul class="dialog__ul">
             <li class="dialog__li">
               <button
