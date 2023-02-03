@@ -32,7 +32,8 @@ html {
 }
 
 body {
+  background-color: var(--color-purple-900);
   color: var(--color-gray-500);
   font-family: "Open Sans", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
 }

@@ -37,6 +37,11 @@
   background-color: var(--color-purple-450);
 }
 
+.game__li.used {
+  background-color: var(--color-purple-450);
+  cursor: default;
+}
+
 .selected {
   background-color: var(--color-purple-450);
   cursor: auto;

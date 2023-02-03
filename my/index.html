@@ -65,24 +65,26 @@
           Start New Game
         </button>
       </section>
-      <section class="won hidden">
-        <h3 class="won__h3">You won, <span class="won__span"></span>!</h3>
+      <section class="won hidden" id="youWon">
+        <h3 class="won__h3" id="wonText">
+          You won, <span class="won__span" id="winnerName"></span>!
+        </h3>
         <p class="won__p">Click "Start New Game" above, to start a new game!</p>
       </section>
-      <section class="game hidden">
+      <section class="game hidden" id="game">
         <h3 class="game__h3">
-          It's your turn <span class="game__span">M</span>!
+          It's your turn <span class="game__span" id="yourTurnName"></span>!
         </h3>
-        <ol class="game__ol">
-          <li class="game__li"></li>
-          <li class="game__li"></li>
-          <li class="game__li"></li>
-          <li class="game__li"></li>
-          <li class="game__li"></li>
-          <li class="game__li"></li>
-          <li class="game__li"></li>
-          <li class="game__li"></li>
-          <li class="game__li"></li>
+        <ol class="game__ol" id="gameField">
+          <li class="game__li" data-col="0" data-row="0"></li>
+          <li class="game__li" data-col="1" data-row="0"></li>
+          <li class="game__li" data-col="2" data-row="0"></li>
+          <li class="game__li" data-col="0" data-row="1"></li>
+          <li class="game__li" data-col="1" data-row="1"></li>
+          <li class="game__li" data-col="2" data-row="1"></li>
+          <li class="game__li" data-col="0" data-row="2"></li>
+          <li class="game__li" data-col="1" data-row="2"></li>
+          <li class="game__li" data-col="2" data-row="2"></li>
         </ol>
       </section>
       <aside class="dialog hidden" id="playerNameDialog">

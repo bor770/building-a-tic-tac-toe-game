@@ -5,12 +5,12 @@ const players = [
 let currentPlayerNameEditing;
 
 function editPlayerName(event) {
-  playerNameDialogElement.classList.remove(`hidden`);
+  showElement(playerNameDialogElement);
   currentPlayerNameEditing = event.target.dataset.player - 1;
 }
 
 function closeNameDialog() {
-  playerNameDialogElement.classList.add(`hidden`);
+  hideElement(playerNameDialogElement);
 }
 
 function submitPlayerName(event) {
@@ -19,13 +19,14 @@ function submitPlayerName(event) {
   const name = nameInputElement.value.trim();
   if (!name) {
     formElement.classList.add(`invalid`);
-    formInvalidPElement.classList.remove(`hidden`);
-  } else {
-    players[currentPlayerNameEditing].name = name;
-    playerNameElements[currentPlayerNameEditing].textContent = name;
-    nameInputElement.value = ``;
-    closeNameDialog();
+    showElement(formInvalidPElement);
+    return;
   }
+  
+  players[currentPlayerNameEditing].name = name;
+  playerNameElements[currentPlayerNameEditing].textContent = name;
+  nameInputElement.value = ``;
+  closeNameDialog();
 }
 
 editPlayer1ButtonElement.addEventListener(`click`, editPlayerName);

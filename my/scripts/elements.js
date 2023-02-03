@@ -16,3 +16,25 @@ const cancelButtonElement = document.querySelector(`#cancelButton`);
 const confirmButtonElement = document.querySelector(`#confirmButton`);
 
 const startButtonElement = document.querySelector(`#startButton`);
+
+const gameElement = document.querySelector(`#game`);
+
+const yourTurnNameElement = document.querySelector(`#yourTurnName`);
+
+const gameFieldElement = document.querySelector(`#gameField`);
+
+const gameSquareElements = document.querySelectorAll(`.game__li`);
+
+const youWonElement = document.querySelector(`#youWon`);
+
+const wonTextElement = document.querySelector(`#wonText`);
+
+const winnerNameElement = document.querySelector(`#winnerName`);
+
+function showElement(element) {
+  element.classList.remove(`hidden`);
+}
+
+function hideElement(element) {
+  element.classList.add(`hidden`);
+}
